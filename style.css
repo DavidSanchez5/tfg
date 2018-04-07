@@ -1,0 +1,46 @@
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.nav li:hover {background: purple;}
+
+
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+h1, p, strong
+{
+  color: black;
+  /*font-family: 'Roboto', sans-serif;*/
+
+}
+
+h2{text-align: center;}
+
+.carousel { width: 950px; height:500px; margin-right: auto; margin-left: auto; }
+.texto { width: 900px; margin-left: auto; margin-right: auto; padding-top: 20px; }
+
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) 
+    {
+      .sidenav 
+      {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }

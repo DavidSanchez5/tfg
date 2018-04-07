@@ -1,0 +1,99 @@
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de registro</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="registroPruebaCSS.css">
+        <link rel="stylesheet" href="style.css">
+       
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header"><a class="navbar-brand" href="#">Logo</a>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Inicio</a></li>
+              <li><a href="#">Foro</a></li>
+              <li><a href="registro.html">Registrarse</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <form action="index.html" method="post">
+      
+        <h1>Regístrate</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Información básica</legend>
+          <label for="name">Nombre*:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="password">Contraseña*:</label>
+          <input type="password" id="password" name="user_password">
+
+          <label for="mail">Correo*:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          
+    <!--      
+          <label>Age:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label>
+    -->    
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Tu perfil</legend>
+          <label for="bio">Biografía:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+  <!--      <fieldset>
+        <label for="job">Job Role:</label>
+        <select id="job" name="user_job">
+          <optgroup label="Web">
+            <option value="frontend_developer">Front-End Developer</option>
+            <option value="php_developor">PHP Developer</option>
+            <option value="python_developer">Python Developer</option>
+            <option value="rails_developer"> Rails Developer</option>
+            <option value="web_designer">Web Designer</option>
+            <option value="WordPress_developer">WordPress Developer</option>
+          </optgroup>
+          <optgroup label="Mobile">
+            <option value="Android_developer">Androild Developer</option>
+            <option value="iOS_developer">iOS Developer</option>
+            <option value="mobile_designer">Mobile Designer</option>
+          </optgroup>
+          <optgroup label="Business">
+            <option value="business_owner">Business Owner</option>
+            <option value="freelancer">Freelancer</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option value="secretary">Secretary</option>
+            <option value="maintenance">Maintenance</option>
+          </optgroup>
+        </select>
+        
+          <label>Interests:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
+        
+        </fieldset>
+    -->
+        <br><br>
+        <button class="boton" type="submit"><strong>Enviar</strong></button>
+      </form>
+      
+    </body>
+</html>
